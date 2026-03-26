@@ -2,7 +2,7 @@ export const SeriesCard =(props)=>{
     const { id, img_url, name, rating, description, cast, genre, watch_url } = props.currElement;
     // props.data is desturctured
     return(
-     <li>
+     <li key={currElement.id}>
     <div>
     <img src={img_url} alt={props.currElement.img_url} width="40%" height="40%" />
     </div>

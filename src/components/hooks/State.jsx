@@ -1,10 +1,11 @@
 import {useState} from "react";
 //importing the usestate hook from react lib.
+//each time the state variable gets updated then the component will re-render and the new value of the state variable will be displayed on the screen.
 export const State = () => {
 const [count, setCount] = useState(0); // count is a state variable , setCount is used to update state varibale & useState(0) is hook used to set the initial value of the state .
 
 const handleButtonClick = () => {
-  setCount(() => count + 1);
+  setCount(() => count + 1); //callback function gets called automatically .
 };
 
 return (

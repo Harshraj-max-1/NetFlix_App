@@ -1,0 +1,79 @@
+/* Grandparent */
+.toggle-switch {
+  padding: 20px;
+  border-radius: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.3s ease;
+}
+
+/* Parent */
+.switch {
+  width: 180px;
+  height: 90px;
+  border-radius: 50px;
+  position: relative;
+  transition: background 0.3s ease;
+}
+
+/* Circle */
+.switch-state {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  top: 10px;
+  left: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+/* ================= */
+/* ✅ ON STATE */
+/* ================= */
+
+.toggle-switch.on {
+  background: #4caf50;   /* grandparent green */
+}
+
+.switch.on {
+  background: #4caf50;   /* parent green */
+}
+
+.switch.on .switch-state {
+  background: #4caf50;
+  border: 3px solid white;
+  transform: translateX(90px);
+}
+
+/* ================= */
+/* ❌ OFF STATE */
+/* ================= */
+
+.toggle-switch.off {
+  background: #2c2c2c;  /* dark grey */
+}
+
+.switch.off {
+  background: #3a3a3a;  /* grey */
+}
+
+.switch.off .switch-state {
+  background: #f44336;
+  transform: translateX(0);
+}
+
+body {
+  background: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}

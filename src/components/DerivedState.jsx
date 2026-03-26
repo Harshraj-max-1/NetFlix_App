@@ -13,8 +13,7 @@ console.log(users);
 const userCount = users.length;
 
 // Derived state: average age of users
-const averageAge =
-  users.reduce((accum, curElem) => accum + curElem.age, 0) / userCount;
+const averageAge = users.reduce((accum, curElem) => accum + curElem.age, 0) / userCount;
 
 return (
   <div className="main-div">

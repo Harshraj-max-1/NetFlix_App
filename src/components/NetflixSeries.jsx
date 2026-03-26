@@ -12,9 +12,9 @@ const NetflixSeries=()=>{
   return(
     <ul>
         {seriesData.map((currElement)=>(
-            <SeriesCard key={currElement.id} currElement={currElement} />
-            //key and currElement is props that we are passing to the seriesCard component and we are using the key prop to give a unique key to each element in the list and we are using the currElement prop to pass the current element of the seriesData array to the seriesCard component.
-        )) } 
+            <SeriesCard currElement={currElement} />
+            //currElement is props that we are passing to the seriesCard component and we are using the currElement prop to pass the current element of the seriesData array to the seriesCard component.
+        ))} 
     </ul>
   );
 }

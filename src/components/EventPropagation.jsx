@@ -10,7 +10,7 @@ export const EventPropagation = () => {
 
   const handleChildClick = (event) => {
     console.log(event);
-    event.stopPropagation(); // it will stop the event from bubbling up to the parent and grandparent divs. so when we click on the child div then only the child div will be clicked and the parent and grandparent divs will not be clicked.
+    event.stopPropagation(); // it will stop the event from bubbling up to the parent and grandparent divs. so when we click on the child div then only the child div will be clicked and the parent and grandparent divs will not be clicked.(niche se upar)
     console.log("Child clicked");
   };
 
@@ -27,5 +27,5 @@ export const EventPropagation = () => {
     </section>
   );
 };
-
+//upar se niche
 //onClickCapture => it will trigger the event in the capturing phase. so when we click on the child div then first the grandparent div will be clicked then the parent div will be clicked and then the child div will be clicked. this is called capturing phase because the event is capturing down from the grandparent to the parent and then to the child.
