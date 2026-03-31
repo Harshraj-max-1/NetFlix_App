@@ -22,7 +22,7 @@ export const Todo = () => {
     const ifTodoContentMatches = task.find((curTask) => curTask.content === content); //to check if the content of the new task already exists in the task array by using the some method to iterate through the array and compare the content property of each task with the content of the new task. It returns true if a match is found and false otherwise.
     if (ifTodoContentMatches) return; //to prevent adding duplicate tasks to the task array by checking if the content of the new task already exists in the array. If a match is found, the function returns early and does not add the new task.
 
-
+    
     setTask((prevTask) => [...prevTask, {id:id , content:content , checked:checked}]);   //to add the new task to the existing task array by using the spread operator to create a new array with the previous tasks and the new task and return the new array.
     }
 

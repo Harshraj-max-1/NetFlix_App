@@ -1,0 +1,80 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* Main container */
+.container {
+  min-height: 100vh;
+  background-color: #dfe3ea;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 50px;
+}
+
+/* Inner box */
+.state-container {
+  width: 70%;
+}
+
+/* Heading */
+.state-container h1 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+/* Count text */
+.state-container p {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.state-container span {
+  font-weight: bold;
+  font-size: 26px;
+}
+
+/* Step input */
+label {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+input {
+  padding: 10px;
+  width: 200px;
+  border: none;
+  outline: none;
+  background-color: #eee;
+  font-size: 16px;
+}
+
+/* Buttons layout */
+.grid-three-cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* Buttons */
+button {
+  padding: 15px;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.2s ease;
+}
+
+button:hover {
+  background-color: #333;
+}
